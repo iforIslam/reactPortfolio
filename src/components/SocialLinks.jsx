@@ -22,7 +22,7 @@ function SocialLinks() {
                     GitHub<FaGithub size={25} />
                 </>
             ),
-            href: 'https://github.com/',
+            href: 'https://github.com/iforIslam',
         },
         {
             id: 3,

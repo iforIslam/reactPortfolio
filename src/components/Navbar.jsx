@@ -37,7 +37,7 @@ function Navbar() {
 
       <ul className='hidden md:flex'>
         {links.map((({ id, link }) =>
-          <li key={id} className='mx-4 cursor-pointer capitalize font-medium text-gray-500 hover:text-gray-400 hover:scale-105 duration-200'>
+          <li key={id} className='mx-4 cursor-pointer capitalize font-medium text-gray-500 hover:text-gray-300 duration-200'>
             <Link to={link} smooth={true} duration={500}>
               {link}
             </Link>
@@ -45,7 +45,7 @@ function Navbar() {
         ))}
       </ul>
 
-      <div onClick={() => setNav(!nav)} className='cursor-pointer pr-4 z-10 text-gray-500 hover:text-gray-400 md:hidden'>
+      <div onClick={() => setNav(!nav)} className='cursor-pointer pr-4 z-10 text-gray-500 hover:text-gray-300 md:hidden'>
         {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
       </div>
 

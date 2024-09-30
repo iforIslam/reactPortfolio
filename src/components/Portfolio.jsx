@@ -1,10 +1,8 @@
 import React from 'react'
-import web1 from '../assets/IceCreamShop.png'
-import web2 from '../assets/web2.png'
-import web3 from '../assets/web3.png'
-import web4 from '../assets/web4.png'
-import web5 from '../assets/web5.png'
-import web6 from '../assets/web6.png'
+import web1 from '../assets/PortfolioImg1.png'
+import web2 from '../assets/PortfolioImg2.png'
+import web3 from '../assets/PortfolioImg3.png'
+
 
 function Portfolio() {
 
@@ -12,26 +10,17 @@ function Portfolio() {
         {
             id: 1,
             src: web1,
+            demoLink:'https://icecream-store-delta.vercel.app/'
         },
         {
             id: 2,
             src: web2,
+            demoLink:'https://touragency-one.vercel.app/'
         },
         {
             id: 3,
             src: web3,
-        },
-        {
-            id: 4,
-            src: web4,
-        },
-        {
-            id: 5,
-            src: web5,
-        },
-        {
-            id: 6,
-            src: web6,
+            demoLink:'https://codingplatform-six.vercel.app/'
         },
     ]
 
@@ -46,12 +35,14 @@ function Portfolio() {
 
                 <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0'>
 
-                    {portfolios.map(({ id, src }) => (
+                    {portfolios.map(({ id, src,demoLink }) => (
                         <div key={id} className='shadow-md shadow-gray-600 rounded-lg'>
                             <img src={src} alt="" className='rounded-md duration-200 hover:scale-105' />
                             <div className='flex justify-center items-center'>
-                                <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'>Demo</button>
-                                <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'>Code</button>
+                                <a href={demoLink} target="_blank" rel="noopener noreferrer" className='w-full text-center'>
+                                    <button className='px-6 py-3 m-4 duration-200 hover:scale-105'>Demo</button>
+                                </a>
+                                {/* <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'>Code</button> */}
                             </div>
                         </div>
 

@@ -81,7 +81,7 @@ function Experience() {
 
           <div className='w-full grid grid-cols-2 sm:grid-cols-3 gap-8 px-12 sm:px-0 text-center'>
             {techs.map(({id,src,title,style,size})=>(
-              <div key={id} className={`shadow-md hover:scale-105 py-2 shadow-gray-600 rounded-lg flex flex-col justify-center items-center ${style}`}>
+              <div key={id} className={`shadow-md hover:scale-105 duration-200 py-2 shadow-gray-600 rounded-lg flex flex-col justify-center items-center ${style}`}>
               <img src={src} className={`object-contain ${size || "w-20 h-20"}`} alt="" />
               <p className='mt-4'>{title}</p>
             </div>
