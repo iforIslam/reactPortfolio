@@ -2,6 +2,7 @@ import React from 'react'
 import web1 from '../assets/PortfolioImg1.png'
 import web2 from '../assets/PortfolioImg2.png'
 import web3 from '../assets/PortfolioImg3.png'
+import web4 from '../assets/PortfolioImg4.png'
 
 
 function Portfolio() {
@@ -22,6 +23,12 @@ function Portfolio() {
             src: web3,
             demoLink:'https://codingplatform-six.vercel.app/'
         },
+        {
+            id: 4,
+            src: web4,
+            demoLink:'https://ai-keyword-extractor-ashen.vercel.app/',
+            isLarge: true, 
+        },
     ]
 
     return (
@@ -35,7 +42,7 @@ function Portfolio() {
 
                 <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0'>
 
-                    {portfolios.map(({ id, src,demoLink }) => (
+                    {portfolios.map(({ id, src,demoLink}) => (
                         <div key={id} className='shadow-md shadow-gray-600 rounded-lg'>
                             <img src={src} alt="" className='rounded-md duration-200 hover:scale-105' />
                             <div className='flex justify-center items-center'>
