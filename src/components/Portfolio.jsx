@@ -3,11 +3,25 @@ import web1 from '../assets/PortfolioImg1.png'
 import web2 from '../assets/PortfolioImg2.png'
 import web3 from '../assets/PortfolioImg3.png'
 import web4 from '../assets/PortfolioImg4.png'
+import web5 from '../assets/PortfolioImg5.png'
+import web6 from '../assets/PortfolioImg6.png'
 
 
 function Portfolio() {
 
     const portfolios = [
+        {
+            id: 5,
+            src: web5,
+            demoLink:'https://book-store-smrd.vercel.app/',
+            isLarge: true, 
+        },
+        {
+            id: 6,
+            src: web6,
+            demoLink:'https://converto-main.vercel.app/',
+            isLarge: true, 
+        },
         {
             id: 1,
             src: web1,
@@ -29,6 +43,7 @@ function Portfolio() {
             demoLink:'https://ai-keyword-extractor-ashen.vercel.app/',
             isLarge: true, 
         },
+        
     ]
 
     return (
