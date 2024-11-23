@@ -19,8 +19,8 @@ function Home() {
                         </Link>
                     </div>
                 </div>
-                <div>
-                    <img src={heroImage} alt="my profile" className='rounded-2xl mx-auto w-2/3 md:w-full' />
+                <div className=''>
+                    <img src={heroImage} alt="my profile" className='rounded-2xl mx-auto w-2/3 md:w-full md:ml-24 md:pb-10' />
                 </div>
             </div>
 
